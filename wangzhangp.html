@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <title>
+            谢保瑞使用的高频网站列表
+        </title>
+        <meta charset="utf-8">
+        <link rel="icon" href="static/wd.ico">
+    <style>
+        .centertext{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+            .container {
+                position: relative;
+                    top: 100px;
+                    width: 100%;
+                    height: 500px;
+                    background-color: #f0f0f0;
+            }
+            .container1 {
+                position: relative;
+                top: 40px;
+                width: 100%;
+                height: 240px;
+                background-color: aquamarine;
+            }
+            .container2{
+                position: relative;
+                top: 0px;
+                width: 100%;
+                height: 210px;
+                background-color:#020524;
+            }
+            /* 设置表格的宽度和边框 */
+            table {
+                    width: 50%;
+                    border: 1px solid #000000;
+            }
+            /* 设置表格单元格之间的间距 */
+            table{
+                position: relative;
+                top:50px;
+                left:150px;
+                width: 80%;
+                border-spacing: 10px;
+            }
+            td{
+                /* 设置单元格的填充 */
+                padding: 10px; /*单元格的内边距*/
+                color: #fff;
+            }
+            th{
+                /* 设置表格头部单元格的背景颜色 */
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px;
+            }
+            tr{
+                background-color: #4CAF50;
+            }
+            .biggest.title h1{
+                font-size: 5em;
+                margin: 0;
+            }
+            /*设置字间距为2px*/
+            .text-with{
+                letter-spacing: 50px;
+            }
+            /*设置一个背景图片在container和container1之间*/
+            .container1::before{
+                content: "";
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                background-image: url("./static/西北工业大学.gif");
+                opacity: 0.5;/*透明度*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container1">
+            <div class="centertext">
+                <div class="biggest title">
+                    <h1 class="text-with" style="color: rgb(118, 118, 62);">欢迎来到我的网站</h1>
+                </div>
+            </div>
+        </div>
+    </body>
+        <body>
+        <div class="container">
+        <table border="1">
+            <tr>
+                <td>网站名称</td>
+                <td style="color: aqua;">用途</td>
+                <td style="color: blue;">网址</td>
+            </tr>
+            <tr>
+                <td>翱翔门户</td>
+                <td style="color: aqua;">选退课</td>
+                <td><a href="https://ecampus.nwpu.edu.cn/main.html#/Index" target="_blank",rel="noopener">nwpu</a></td>
+            </tr>
+            <tr>
+                <td>菜鸟教程</td>
+                <td style="color: aqua;">学习python</td>
+            <td><a href="https://www.runoob.com/html/html-tutorial.html"target="_blank" rel="noopener">runoob</a>
+                </td>
+            </tr>
+            <tr>
+                <td>U校园AI版</td>
+                <td style="color: aqua;">学习英语</td>
+                <td><a href="https://ucloud.unipus.cn/home" target="_blank" rel='noopener'>u</a></td>
+            </tr>
+            <tr>
+                <td>ico转换</td>
+                <td style="color: aqua;">制作图标</td>
+                <td><a href="https://cdkm.com/cn/jpg-to-ico" target="_blank" rel="noopener">ico</a></td>
+            </tr>
+        </table>
+        </div>
+</body>
+</html>
