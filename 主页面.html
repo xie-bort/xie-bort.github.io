@@ -1,0 +1,255 @@
+<!-- 来自西北工业大学的xdx写的，因为html和css没有学扎实，现在只能写到这里啦，
+ 希望有专业知识的人能够指导我一下，我在这里先谢谢大家了
+ 斯你马赛！ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>龙族</title>
+    <link rel="shortcut icon" href="images3/图标1.ico" type="image/x-icon">
+    <script>
+        function showalert(){
+            alert('抱歉，暂时还没有这个功能，敬请期待！')
+        }
+    </script>
+    <style>
+
+        /* 设置一个背景图片 */
+        .background{
+            background-image: url(images3/主页面背景.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            top:0;
+            left: 0;
+        }
+
+
+        /* 下拉按钮的样式 */
+        /* 第0各 */
+        .dropdown0{
+            position: relative;
+            top: 20px;
+            left:50px ;
+            display: inline-block;
+        }
+        /* 第一个 */
+        .dropdown1{
+            position: relative;
+            top: 20px;
+            left:250px ;
+            display: inline-block;
+        }
+        /* 第二个 */
+        .dropdown2{
+            position: relative;
+            top: 20px;
+            left: 450px;
+            display: inline-block;
+        }
+        /* 第三个 */
+        .dropdown3{
+            position: relative;
+            top: 20px;
+            left: 650px;
+            display: inline-block;
+        }
+        /* 第四个 */
+        .dropdown4{
+            position: relative;
+            top: 20px;
+            left: 850px;
+            display: inline-block;
+        }
+        /* 第五个 */
+        .dropdown5{
+            position: relative;
+            top: 20px;
+            left: 1050px;
+            display: inline-block;
+         }
+        .list-box{
+            width: 500px;
+            height: 800px;
+            overflow: auto;
+            border: 1px solid#000;
+            position: absolute;
+            top: 350px;
+            left: 50px;
+            background-color: #3e718e;
+            opacity: 0.8;
+        }
+        .text-center{
+            text-align: center;
+        }
+
+
+
+
+
+
+
+
+
+
+        .dropbtn{
+            background-color: none;
+            background: transparent;
+            color: black;
+            padding: 16px;
+            border: none;
+            cursor: pointer;
+            font-family: '微软雅黑';
+            font-size: larger;
+        }
+        /* 下拉内容 */
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        /* 下拉链接 */
+        .dropdown-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        /* 鼠标悬停时改变下拉链接的颜色 */
+        .dropdown-content a:hover{
+            background-color: #f1f1f1;
+        }
+        /* 第一个列表框 */
+        /* 鼠标悬停在按钮上时，显示下拉菜单 */
+        .dropdown1:hover .dropdown-content{
+            display: block;
+        }
+        /* 鼠标悬停在下拉内容上时，保持显示状态 */
+        .dropdown1:hover .dropbtn{
+            background-color: #3e718e;
+        }
+        /* 第二个列表框 */
+        .dropdown2:hover .dropdown-content{
+            display: block;
+        }
+        /* 鼠标悬停在下拉内容上时，保持显示状态 */
+        .dropdown2:hover .dropbtn{
+            background-color: #3e718e;
+        }
+        /* 第三个列表框 */
+        .dropdown3:hover .dropdown-content{
+            display: block;
+        }
+        /* 鼠标悬停在下拉内容上时，保持显示状态 */
+        .dropdown3:hover .dropbtn{
+            background-color: #3e718e;
+        }
+        /* 第四个列表框 */
+        .dropdown4:hover .dropdown-content{
+            display: block;
+        }
+        /* 鼠标悬停在下拉内容上时，保持显示状态 */
+        .dropdown4:hover .dropbtn{
+            background-color: #3e718e;
+        }
+        /* 第五个列表框 */
+        .dropdown5:hover .dropdown-content{
+            display: block;
+        }
+        /* 鼠标悬停在下拉内容上时，保持显示状态 */
+        .dropdown5:hover .dropbtn{
+            background-color: #3e718e;
+        }
+        .close{
+            text-decoration: none;
+        }
+        .colo1{
+            color: gray;
+        }
+        .color2{
+            color: rgb(49, 4, 184);
+        }
+        li{
+            line-height: 26px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="dropdown0">
+        <button class="dropbtn">首页</button>
+    </div>
+    <!-- 第一个 -->
+    <div class="dropdown1">
+        <button class="dropbtn">关于《龙族》</button>
+        <div class="dropdown-content">
+            <a href="./龙族简介.html" class="close color" target="_blank">龙族简介</a>
+            <a href="./图片库.html" class="close color"target="_blank">图片库</a>
+            <a href="./龙族背景.html" class="close color"target="_blank">龙族背景</a>
+            <a href="./主要人物.html" class="close color"target="_blank">主要人物</a>
+        </div>
+    </div>
+    <!-- 第二个 -->
+    <div class="dropdown2">
+        <button class="dropbtn">关于作者</button>
+        <div class="dropdown-content">
+            <a href="./关于江南.html" class="close color" target="_blank">关于江南</a>
+            <a href="./创作原因.html" class="close color"target="_blank">创作原因</a>
+            <a href="./何时创作.html" class="close color"target="_blank">何时创作</a>
+        </div>
+    </div>
+    <!-- 第三个 -->
+    <div class="dropdown3">
+        <button class="dropbtn">龙族书目</button>
+        <div class="dropdown-content">
+            <a href="./龙族I.html" class="close color" target="_blank">龙族I</a>
+            <a href="./龙族II.html" class="close color"target="_blank">龙族II</a>
+            <a href="./龙族III.html" class="close color"target="_blank">龙族III</a>
+            <a href="./龙族IV.html" class="close color"target="_blank">龙族IV</a>
+            <a href="./龙族V.html" class="close color"target="_blank">龙族V</a>
+        </div>
+    </div>
+    <!-- 第四个 -->
+    <div class="dropdown4">
+        <button class="dropbtn">联系我们</button>
+        <div class="dropdown-content">
+            <a href="./QQ.html" class="close color" target="_blank">QQ</a>
+            <a href="./微信.html" class="close color"target="_blank">微信</a>
+            <a href="./微博.html" class="close color"target="_blank">微博</a>
+            <a href="./邮箱.html" class="close color"target="_blank">邮箱</a>
+        </div>
+    </div>
+    <!-- 第五个 -->
+    <div class="dropdown5">
+        <button class="dropbtn">龙族周边</button>
+        <div class="dropdown-content">
+            <input type="button" onclick="showalert()" value="龙族邮票" class="color"><br>
+            <br>
+            <input type="button" onclick="showalert()" value="龙族吧唧" class="color"><br>
+            <br>
+            <input type="button" onclick="showalert()" value="龙族明信片" class="color">
+
+        </div>
+    </div>
+<!-- 设置一个综合新闻  在页面右侧 -->
+ <ol class="list-box text-center color2"><h1>龙族十大语录</h1>
+ <li><h4>没有人逃得过悲伤,悲伤才是最大的魔鬼</h4></li>
+ <li><h4>活着的意义,就是你快死的瞬间划过你脑海的那些事啊</h4></li>
+ <li><h4>这个世界很温柔,但它不喜欢我</h4></li>
+ <li><h4>你扮小丑太久了,演得太入戏了,都忘记自己了</h4></li>
+ <li><h4>多少红颜为傻逼,多少傻逼不珍惜</h4></li>
+ <li><h4>如果世界真的不喜欢你,那世界就是我的敌人了</h4></li>
+ <li><h4>我讨厌回忆,总让人分不清自己到底是谁</h4></li>
+ <li><h4>浮生梦,三生渺渺,因缘无踪,何必重逢.谁当逝水,东流无终</h4></li>
+ <li><h4>我也是个偶尔会发疯的人啊</h4></li>
+ <li><h4>人总要抱紧什么才知道自己真的存在,哪怕那只是幻影</h4></li>
+ </ol>
+</body>
+</html>

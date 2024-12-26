@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="images3/图标1.ico" type="image/x-icon">
+<title>图片库</title>
+<style>
+    .gallery-container {
+      overflow: hidden;
+      white-space: nowrap;
+      width: 100%;
+      position: relative;
+    }
+  
+    .gallery {
+      display: inline-block;
+      animation: scroll-right 10s linear infinite; /* 使用新名称 */
+    animation-name: scroll-right;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode:backwards;
+    }
+  
+    .gallery img {
+      width: 350px;
+      height: 400px;
+      margin-right: 200px;
+    }
+  
+    /* 定义动画 */
+    @keyframes scroll-right {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%); /* 注意这里应该是负值，表示向左滚动 */
+      }
+    }
+  </style>
+
+
+  <style>
+    .gallery1-container {
+      overflow: hidden;
+      white-space: nowrap;
+      width: 100%;
+      position: relative;
+    }
+  
+    .gallery1 {
+      display: inline-block;
+      animation: scroll-left 10s linear infinite; /* 使用新名称 */
+      animation-name: scroll-left;
+      animation-duration: 5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+  
+    .gallery1 img {
+      width: 350px;
+      height: 400px;
+      margin-right: 200px;
+    }
+  
+    /* 定义动画 */
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(-100%); /* 注意这里应该是负值，表示从左侧开始 */
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+  </style>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+<div class="gallery-container">
+  <div class="gallery">
+    <img src="./images3/滚动1.jpg" alt="图片1">
+    <img src="./images3/滚动2.jpg" alt="图片2">
+    <img src="./images3/滚动3.jpg" alt="图片3">
+    <img src="./images3/滚动4.jpg" alt="图片4">
+  </div>
+</div>
+
+<div class="gallery1-container">
+    <div class="gallery1">
+        <img src="./images3/滚动5.jpg" alt="图片5">
+        <img src="./images3/滚动6.jpg" alt="图片6">
+        <img src="./images3/滚动7.jpg" alt="图片7">
+        <img src="./images3/滚动8.jpg" alt="图片8">
+    </div>
+</div>
+
+
+
+<div class="gallery-container">
+    <div class="gallery">
+      <img src="./images3/滚动9.jpg" alt="图片9">
+      <img src="./images3/滚动10.jpg" alt="图片10">
+      <img src="./images3/滚动11.jpg" alt="图片11">
+      <img src="./images3/滚动12.jpg" alt="图片12">
+    </div>
+  </div>
+
+
+
+  <div class="gallery1-container">
+    <div class="gallery1">
+        <img src="./images3/滚动13.jpg" alt="图片13">
+        <img src="./images3/滚动14.jpg" alt="图片14">
+        <img src="./images3/滚动15.jpg" alt="图片15">
+        <img src="./images3/滚动16.jpg" alt="图片16">
+    </div>
+</div>
+
+
+</body>
+</html>
